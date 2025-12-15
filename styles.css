@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #05050a;
+    color: #e2e8f0;
+}
+
+/* Custom Scrollbar for feed */
+.feed-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+.feed-scroll::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+.feed-scroll::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+.glass-panel {
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neon-border {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    border: 1px solid #3b82f6;
+}
+
+.gem-glow {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #3b82f6;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.image-card {
+    transition: transform 0.2s;
+}
+.image-card:active {
+    transform: scale(0.98);
+}
+
